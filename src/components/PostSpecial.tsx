@@ -9,7 +9,7 @@ export default function PostSpecial() {
     const formRef = useRef<HTMLFormElement>(null)
     
 
-    const handleSubmit = () => {
+    const postSpecial = () => {
         const newSpecial = [...specials];
         const formData = new FormData(formRef.current!);
         newSpecial.push({
@@ -31,7 +31,7 @@ export default function PostSpecial() {
         ref={formRef}
         onSubmit={(e) => {
           e.preventDefault();
-          handleSubmit();
+          postSpecial();
         }}
       >
         <h2>Post a Special</h2>
