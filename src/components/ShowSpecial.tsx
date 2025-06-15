@@ -38,7 +38,7 @@ export default function ShowSpecial() {
             <option value="discount">Filter by discount</option>
             <option value="price">Filter by Price</option>
           </select>
-          <Link to="/postspecial">Enter New Specials</Link>
+          <Link to="/postspecial">Post New Specials</Link>
         </div>
         <div>
           <h2>Specials Menu</h2>
