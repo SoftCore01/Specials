@@ -38,7 +38,7 @@ export default function ReservedCard(props:FoodCardProps) {
         </div>
         <div className="reserve-buttons">
           <button className="remove-button" onClick={handleReturnReserve}>
-            Return
+            Cancel reservation
           </button>
         </div>
       </div>

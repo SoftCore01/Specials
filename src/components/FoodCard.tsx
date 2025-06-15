@@ -8,17 +8,17 @@ interface FoodCardProps extends FoodType {
 export default function FoodCard(props:FoodCardProps) {
     const {specials, setSpecials, reservations, setReservations} = useFoodContext();
 
-    const handleRemoveExpiredSpecials = () => {
+    const removeExpiredSpecials = () => {
         const tempSpecial = [...specials];
         tempSpecial.splice(props.index, 1);
         setSpecials(tempSpecial);
     }
 
-    const handleReserveSpecial = () => {
+    const reserveSpecial = () => {
         const tempReservations = [...reservations];
         tempReservations.push(specials[props.index])
         setReservations(tempReservations);
-        handleRemoveExpiredSpecials()
+        removeExpiredSpecials()
     }
     
     return (
@@ -41,12 +41,12 @@ export default function FoodCard(props:FoodCardProps) {
         <div className="buttons">
           <button
             className="remove-button"
-            onClick={handleRemoveExpiredSpecials}
+            onClick={removeExpiredSpecials}
           >
             Remove
           </button>
-          <button className="reserve-button" onClick={handleReserveSpecial}>
-            Reserve
+          <button className="reserve-button" onClick={reserveSpecial}>
+            Reserve Now
           </button>
         </div>
       </div>
