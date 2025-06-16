@@ -60,6 +60,7 @@ export default function PostSpecial() {
             className="form-input"
             type="number"
             name="price"
+            min={1}
             id="price"
             placeholder="Price"
             required
@@ -69,6 +70,7 @@ export default function PostSpecial() {
           <input
             className="form-input"
             type="number"
+            min={1}
             name="discount"
             id="discount"
             placeholder="Discount percentage"
@@ -79,6 +81,7 @@ export default function PostSpecial() {
           <input
             className="form-input"
             type="number"
+            min={1}
             name="quantity"
             id="quantity"
             placeholder="Quantity"

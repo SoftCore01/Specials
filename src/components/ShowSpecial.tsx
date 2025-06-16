@@ -35,8 +35,8 @@ export default function ShowSpecial() {
             onChange={(e) => handleFilter(e.target.value)}
           >
             <option value="">Filter</option>
-            <option value="discount">Filter by discount</option>
-            <option value="price">Filter by Price</option>
+            <option value="asc">Filter by </option>
+            <option value="desc">Filter by Price</option>
           </select>
           <Link to="/postspecial">Post New Specials</Link>
         </div>
